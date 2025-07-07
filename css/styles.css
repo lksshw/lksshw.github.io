@@ -1,0 +1,276 @@
+* {
+	margin: 3px;
+	padding: 3px;
+}
+
+.panel1{
+	place-items: center;
+	margin-bottom: 20px;
+}
+
+.panel2, .panel3{
+	display: grid;
+	place-items: center;
+	margin-bottom: 20px;
+}
+
+.links {
+	position: relative;
+	display: flex;
+	margin-top: -20px;
+	margin-bottom: 30px;
+}
+.paper,
+.talk {
+	width: 50px;
+	transition: transform 0.3s ease;
+}
+
+.paper:hover,
+.talk:hover {
+	transform: scale(1.1);
+}
+
+#p1_lower_half {
+	margin-top: -20px;
+	margin-left: 85px;
+}
+
+img {
+	/* border: 10px solid, #000;
+	margin-bottom: 50px;
+	border-bottom: none;
+	border-right: none; */
+	/* border: 2px solid, #000; */
+	width: 700px;
+	/* padding-bottom: 20px;
+	margin-bottom: 20px; */
+}
+
+.panel4 img {
+	border: none;
+	width: 480px;
+}
+
+.main_simulator_div {
+	padding-left: 260px;
+	margin-top: -200px;
+	/* border: 10px solid, #000;
+	margin-bottom: 50px;
+	padding-bottom: 20px; */
+	border-top: none;
+	border-right: none;
+}
+
+#playbackcontrols {
+	position: relative;
+	left: 10px;
+	top: 3%;
+	right: 3%;
+	width: 650px;
+	height: 40px;
+}
+
+#slider {
+	-webkit-appearance: none; /* Override default CSS styles */
+	outline: none; /* Remove outline */
+	opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+	transition: opacity 0.2s;
+	height: 10px;
+	width: 450px;
+	padding-top: 20px;
+}
+
+#slider::-webkit-slider-runnable-track {
+	background: grey; /* Track color */
+	height: 5px;
+}
+
+#slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+}
+
+#slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 15px;
+	height: 40px;
+	background: #000; /* Change this for thumb color */
+	cursor: pointer;
+	border-radius: 10px;
+	margin-top: -17px;
+}
+
+#playicon,
+#pauseicon,
+#reseticon {
+	font-size: 20px;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	padding-bottom: 27px;
+	padding-left: 5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+#pauseicon {
+	font-size: 25px;
+	background-color: orange;
+	border-radius: 5px;
+	padding-bottom: 30px;
+}
+
+.icon-btn {
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	font-size: 18px;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-bottom: 33px;
+	padding-right: 29px;
+}
+
+/*info bar setting*/
+.info_div {
+	position: relative;
+	top: 20px;
+	left: 270px;
+}
+
+/* canvas settings */
+.canvas_cbar_div {
+	/* height: 300px; */
+	width: fit-content;
+	/* border: 2px solid #333; */
+	position: relative;
+	margin-top: 30px;
+	margin-left: 90px;
+	margin-bottom: 60px;
+}
+.canvas_div {
+	left: 0%;
+}
+
+.cbar_div {
+	position: absolute;
+	top: 10px;
+}
+
+#form {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 80px;
+	margin-left: 550px;
+	text-align: inherit;
+	width: 600px;
+}
+
+.simsettingslabel,
+.qlearninglabel,
+.payofftablelabel {
+	text-decoration: underline;
+}
+
+#resetbtn {
+	margin-left: 10px;
+	font-size: 12px;
+	padding: 3px;
+	color: blue;
+}
+
+#submit {
+	color: crimson;
+	padding-bottom: 16px;
+}
+
+form,
+#submit {
+	margin-left: 80px;
+}
+
+form,
+input {
+	font-size: 12px;
+	height: 7px;
+}
+
+form,
+label {
+	margin-right: 5px;
+}
+
+form,
+span {
+	padding-left: 5px;
+}
+
+form input[type="range"] {
+	accent-color: orange;
+}
+
+#player1text {
+	transform: translateX(-50%) rotate(-90deg);
+	padding-top: 30px;
+	transform-origin: center;
+}
+
+#submit {
+	width: 40px;
+	height: 20px;
+}
+
+/* graph div css */
+
+.graph_div {
+	width: 550px;
+	height: 350px;
+	position: relative;
+	border: 2px solid #333;
+	margin-top: -20px;
+	margin-left: 10px;
+}
+
+.quadrant {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	box-sizing: border-box;
+	border: 1px solid #aaa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: auto;
+}
+.g-agent-size {
+	top: 0;
+	left: 100;
+	/* background: #f8b195; */
+}
+.g-ftn {
+	top: 0;
+	right: 0;
+	/* background: #f67280; */
+}
+.g-coop {
+	bottom: 0;
+	left: 0;
+	/* background: #c06c84; */
+}
+.g-stress {
+	bottom: 0;
+	right: 0;
+	/* background: #c06c84; */
+}
+
+#ag-chart,
+#ftn-chart,
+#coop-chart {
+	width: 100% !important;
+	height: 100% !important;
+}
