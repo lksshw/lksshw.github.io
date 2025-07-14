@@ -1294,10 +1294,10 @@ gridsz.value = 10;
 
 const valueDisplay = document.createElement('span');
 valueDisplay.id = 'gridszvalue';
-valueDisplay.textContent = gridsz.value;
+valueDisplay.textContent = String(Math.pow(gridsz.value, 2));
 
 gridsz.oninput = function(){
-  valueDisplay.textContent = this.value;
+  valueDisplay.textContent = String(Math.pow(this.value,2));
 };
 
 form.appendChild(gridsizelbl);
@@ -1606,7 +1606,7 @@ form.addEventListener('reset', function(event){
   event.preventDefault();
   //reset to default
   form.gridsz.value = defaults['n_agents'];
-  document.getElementById('gridszvalue').textContent = defaults['n_agents'];
+  document.getElementById('gridszvalue').textContent = String(Math.pow(defaults['n_agents'], 2));
 
   form.memlen.value = defaults['memory'];
   document.getElementById('memlenvalue').textContent = defaults['memory'];
